@@ -164,11 +164,11 @@
   .edu .school .courses b{color:var(--ink);}
 
   .certs{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:24px;}
-  .cert{display:flex;align-items:center;gap:11px;padding:13px 20px;border:1px solid var(--line);border-radius:2px;background:#fffdf8;font-size:14.5px;will-change:transform;}
+  .cert{display:flex;align-items:center;gap:11px;padding:13px 20px;border:1px solid var(--line);border-radius:2px;background:#fffdf8;font-size:14.5px;}
   .cert .dot{width:11px;height:11px;border-radius:50%;background:var(--pink);flex-shrink:0;}
   .cert .yr{font-family:var(--font-mono);color:var(--ink-soft);font-size:12px;}
   .skills{display:flex;flex-wrap:wrap;justify-content:center;gap:11px;}
-  .skill{padding:9px 18px;border:1px solid var(--line);border-radius:999px;background:#fffdf8;font-size:14px;color:var(--ink);transition:transform .25s,box-shadow .25s,border-color .25s;will-change:transform;}
+  .skill{padding:9px 18px;border:1px solid var(--line);border-radius:999px;background:#fffdf8;font-size:14px;color:var(--ink);transition:transform .25s,box-shadow .25s,border-color .25s;}
   .skill:hover{transform:translateY(-3px);border-color:var(--pink);box-shadow:0 6px 16px rgba(201,106,146,.16);}
 
   .job{max-width:600px;margin:0 auto;text-align:center;}
@@ -563,7 +563,7 @@
       // ⑦ 扉页砸出：标题大尺度 overshoot
       tl.from(head,{scale:1.5,opacity:0,transformOrigin:'center top',duration:.7,ease:'back.out(2.2)'})
         // ④ stagger + 缩放
-        .from(items,{y:34,scale:.94,opacity:0,stagger:.07,duration:.7,ease:'power3.out'},'-=0.35')
+        .from(items,{y:34,scale:.94,opacity:0,stagger:.07,duration:.7,ease:'power3.out',clearProps:'transform'},'-=0.35')
         .add(function(){ ch.classList.add('inwash'); }); // ⑦ 背景过渡 wash 淡入
     });
     // 作品卡 3D 倾斜（⑧）与 lightbox 已在 workFX
