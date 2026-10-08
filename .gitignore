@@ -1,0 +1,24 @@
+# 工具/隐私
+.obsidian/
+软件/
+资料/
+*.pdf
+
+# 临时文件
+_*
+
+# Obsidian 工作笔记
+log.md
+rule.md
+
+# 部署计划（不公开）
+部署/
+
+# 源图片（已内嵌进 HTML，无需发布）
+头像.png
+作品.png
+作品2.png
+作品3.png
+
+# APP 目录
+APP/
